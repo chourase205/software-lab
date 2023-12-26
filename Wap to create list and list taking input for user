@@ -1,0 +1,19 @@
+# Function to create a list based on user input
+def create_list():
+    user_list = []  # Initialize an empty list
+
+    # Ask the user for the number of elements in the list
+    num_elements = int(input("Enter the number of elements in the list: "))
+
+    # Loop to take input for each element from the user
+    for i in range(num_elements):
+        element = input(f"Enter element {i + 1}: ")
+        user_list.append(element)  # Add the input element to the list
+
+    return user_list
+
+# Call the function to create a list based on user input
+result_list = create_list()
+
+# Display the created list
+print("The created list is:", result_list)
