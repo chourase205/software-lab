@@ -1,0 +1,15 @@
+def print_table(number, limit):
+    print(f"Table of {number}:")
+
+    for i in range(1, limit + 1):
+        result = number * i
+        print(f"{number} * {i} = {result}")
+
+# Input the number for which you want to print the table
+num = int(input("Enter the number to print the table: "))
+
+# Input the limit (how many multiples you want to print)
+limit = int(input("Enter the limit (how many multiples you want to print): "))
+
+# Call the function to print the table
+print_table(num, limit)
