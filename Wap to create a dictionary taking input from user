@@ -1,0 +1,20 @@
+# Function to create a dictionary based on user input
+def create_dictionary():
+    user_dict = {}  # Initialize an empty dictionary
+
+    # Ask the user for the number of key-value pairs in the dictionary
+    num_pairs = int(input("Enter the number of key-value pairs in the dictionary: "))
+
+    # Loop to take input for each key-value pair from the user
+    for i in range(num_pairs):
+        key = input(f"Enter key {i + 1}: ")
+        value = input(f"Enter value for {key}: ")
+        user_dict[key] = value  # Add the input key-value pair to the dictionary
+
+    return user_dict
+
+# Call the function to create a dictionary based on user input
+result_dict = create_dictionary()
+
+# Display the created dictionary
+print("The created dictionary is:", result_dict)
